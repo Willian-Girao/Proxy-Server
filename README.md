@@ -1,8 +1,8 @@
 # C Proxy Server
 
-C implementation of a proxy server. The proxy here makes web content requisitions in the name of a client while it verifies the existence of forbidden content (e.g. pornography) within the required server reply. The content is verified through the indexing of the replied content and a banned word list. If such banned content is present, the access to the target server is blocked and the user is notified. If no banned content is found, the proxy makes the required content available to the user. 
+C implementation of a proxy server. The proxy here makes web content requisitions in the name of a client while it verifies the existence of forbidden content (e.g. pornography) within the required server reply. The content is verified through the indexing of the replied content and a banned word [list](https://github.com/Willian-Girao/Proxy-Server/blob/master/bannedwordlist.txt). If such banned content is present, the access to the target server is blocked and the user is notified. If no banned content is found, the proxy makes the required content available to the user. 
 
-The proxy implemented here can be used as a way of monitoring web content and prevent unwanted material to be accessed.
+The proxy implemented here can be used as a way of monitoring web content and prevent unwanted material to be accessed. The banned word list can be altered as needed, needing only to have terms added or removed from it.
 
 ## How to Execute (Linux)
 
