@@ -1,6 +1,6 @@
 # C Proxy Server
 
-C implementation of a proxy server. The proxy here makes web content requisitions in the name of a client while it verifies the existence of forbidden content (e.g. pornography) within the required server reply. The content is verified through the indexing of the replied content and a [banned word list](https://github.com/Willian-Girao/Proxy-Server/blob/master/bannedwordlist.txt). If such banned content is present, the access to the target server is blocked and the user is notified. If no banned content is found, the proxy makes the required content available to the user. 
+C [implementation](https://github.com/Willian-Girao/Proxy-Server/blob/master/proxy.c) of a proxy server. The proxy here makes web content requisitions in the name of a client while it verifies the existence of forbidden content (e.g. pornography) within the required server reply. The content is verified through the indexing of the replied content and a [banned word list](https://github.com/Willian-Girao/Proxy-Server/blob/master/bannedwordlist.txt). If such banned content is present, the access to the target server is blocked and the user is notified. If no banned content is found, the proxy makes the required content available to the user. 
 
 The proxy implemented here can be used as a way of monitoring web content and prevent unwanted material to be accessed. The banned word list can be altered as needed, needing only to have terms added or removed from it.
 
@@ -26,7 +26,7 @@ telnet localhost <port_numer> GET http://icomp.ufam.edu.br/site/
 
 ## Test Script
 
-A python script is provided in order to perform tests on the C proxy code. Some of the test urls (**pub_urls** array within **proxy_tester.py**) might not be available anymore, in which case you will need to change them to any other url you would like to perform the tests on. To test, run the following on the command line:
+A [python script](https://github.com/Willian-Girao/Proxy-Server/blob/master/proxy_tester.py) is provided in order to perform tests on the C proxy code. Some of the test urls (**pub_urls** array within **proxy_tester.py**) might not be available anymore, in which case you will need to change them to any other url you would like to perform the tests on. To test, run the following on the command line:
 
 ```shell
 ./python_tester.py <proxy_out_file> <port_numer>
