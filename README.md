@@ -26,7 +26,7 @@ telnet localhost <port_numer> GET http://icomp.ufam.edu.br/site/
 
 ## Test Script
 
-A [python script](https://github.com/Willian-Girao/Proxy-Server/blob/master/proxy_tester.py) is provided in order to perform tests on the C proxy code. Some of the test urls (**pub_urls** array within **proxy_tester.py**) might not be available anymore, in which case you will need to change them to any other url you would like to perform the tests on. To test, run the following on the command line:
+A [python script](https://github.com/Willian-Girao/Proxy-Server/blob/master/proxy_test.py) is provided in order to perform tests on the C proxy code. Some of the test urls (**pub_urls** array within **proxy_tester.py**) might not be available anymore, in which case you will need to change them to any other url you would like to perform the tests on. To test, run the following on the command line:
 
 ```shell
 ./python_tester.py <proxy_out_file> <port_numer>
