@@ -1,3 +1,7 @@
+# Introduction
+
+A proxy server is a server that sits between a client application, such as a Web browser, and a real server. It intercepts all requests to the real server to see if it can fulfill the requests itself. If not, it forwards the request to the real server.
+
 # C Proxy Server
 
 C [implementation](https://github.com/Willian-Girao/Proxy-Server/blob/master/proxy.c) of a proxy server. The proxy here makes web content requisitions in the name of a client while it verifies the existence of forbidden content (e.g. pornography) within the required server reply. The content is verified through the indexing of the replied content and a [banned word list](https://github.com/Willian-Girao/Proxy-Server/blob/master/bannedwordlist.txt). If such banned content is present, the access to the target server is blocked and the user is notified. If no banned content is found, the proxy makes the required content available to the user. 
